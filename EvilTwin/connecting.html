@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/js/site.js"></script>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f8ff; /* Warna biru sebagai latar belakang */
+    }
+
+    .loader-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .loader-bar {
+      width: 200px;
+      height: 20px;
+      background-color: #5a6586; /* Warna biru lainnya */
+      position: relative;
+    }
+
+    .loader-fill {
+      height: 100%;
+      width: 0;
+      background-color: #010058; /* Warna biru lebih gelap */
+      animation: fillAnimation 10s linear forwards;
+    }
+
+    @keyframes fillAnimation {
+      to {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader-container">
+    <div class="loader-bar">
+      <div class="loader-fill"></div>
+    </div>
+    <p>Connecting...</p>
+  </div>
+  <script>
+    setTimeout(() => {
+      getFile("wifistatus.txt", function (res) {
+        alert(res);
+      });
+    }, 10 * 1000);
+  </script>
+</body>
+</html>
