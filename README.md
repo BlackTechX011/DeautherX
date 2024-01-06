@@ -76,20 +76,23 @@ Then open your browser and visit ```192.168.4.1```. Make sure you're not connect
 
 If you can't see a DeautherX network, give it some time like 10-5s to start the server if it do not work, ensure ESP8266 Deauther firmware was successfully installed. If it do not solve The issue report to **github issues page**, we will help you.
 ## Home
-![home](./Pictures/home.gif) 
+ ![home](./Pictures/home.gif) 
+
+
+ 
 The first thing you'll probably see when you open the web interface is a warning that you must confirm to continue.
 
 We felt this was necessary when making it since many users would abuse our tool and spread misinformation about how it works.
 
 ## Scan Page
-![scan](.Pictures/scan.png) 
-Deauther Scan Page
+ ![scan](./Pictures/scan.png) 
+
 
 On the scan page, you can discover access points (WiFi networks) and stations (client devices) nearby. If the access point list is empty, click on SCAN APS.
 
 A scan takes a few seconds (usually 2 - 5 seconds). Depending on your board, you might see a LED turning on when starting the scan. As soon as the scan is finished, it turns off, signaling you to click on RELOAD to see the scan results.
 
-![scan1](./pictures/scan1.png) 
+ ![scan](./Pictures/scan1.png)
 
 Once you have a list of the access points, you can select them for an attack. But make sure only to select your own networks. Attacking other people's networks on purpose is strictly prohibited!
 
@@ -105,7 +108,7 @@ This is where you can add, edit and remove SSIDs. An SSID (Service Set Identifie
 
 
 ## Attack Page
-![attack](.Pictures/Attack.png) 
+ ![attack](./Pictures/Attack.png) 
 Deauther Attack Page
 
 On the attack page, you start and stop WiFi attacks such as Deauthentication, Beacon, Probe, and Evil Twin.
@@ -116,6 +119,7 @@ The pkts/s info is not automatically refreshed to save resources. You have to ma
 
 ## FileManager (FS) page
 ![fs](./Pictures/fs.png) 
+
 on The FS page You can uplode your constom Evil Twin page. 
 and you can also uplode multiple HTML Files for Evil Twin but, at a time you can only use HTML file for Evil Twin.
 
