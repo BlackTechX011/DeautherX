@@ -80,9 +80,7 @@ If you can't see a DeautherX network, give it some time like 10-5s to start the 
 
 
  
-The first thing you'll probably see when you open the web interface is a warning that you must confirm to continue.
-
-We felt this was necessary when making it since many users would abuse our tool and spread misinformation about how it works.
+**DeautherX Home Page**
 
 ## Scan Page
  ![scan](./Pictures/scan.png) 
