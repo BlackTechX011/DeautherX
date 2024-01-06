@@ -76,20 +76,20 @@ Then open your browser and visit ```192.168.4.1```. Make sure you're not connect
 
 If you can't see a DeautherX network, give it some time like 10-5s to start the server if it do not work, ensure ESP8266 Deauther firmware was successfully installed. If it do not solve The issue report to **github issues page**, we will help you.
 ## Home
-![image](./pictures/image.png) 
+![home](./Pictures/home.gif) 
 The first thing you'll probably see when you open the web interface is a warning that you must confirm to continue.
 
 We felt this was necessary when making it since many users would abuse our tool and spread misinformation about how it works.
 
 ## Scan Page
-![image](./pictures/image.png) 
+![scan](.Pictures/scan.png) 
 Deauther Scan Page
 
 On the scan page, you can discover access points (WiFi networks) and stations (client devices) nearby. If the access point list is empty, click on SCAN APS.
 
 A scan takes a few seconds (usually 2 - 5 seconds). Depending on your board, you might see a LED turning on when starting the scan. As soon as the scan is finished, it turns off, signaling you to click on RELOAD to see the scan results.
 
-![image](./pictures/image.png) 
+![scan1](./pictures/scan1.png) 
 
 Once you have a list of the access points, you can select them for an attack. But make sure only to select your own networks. Attacking other people's networks on purpose is strictly prohibited!
 
@@ -98,15 +98,14 @@ You can select multiple targets, but it's recommended to select only a single on
 You can also scan for stations to select a specific client rather than an entire network. While a station scan is running, the web interface will be unavailable. You have to wait until it's finished and then reconnect.
 
 ## SSID Page
-![image](./pictures/image.png) 
+![ssid](./Pictures/ssid.png) 
 Deauther SSID Page
 
 This is where you can add, edit and remove SSIDs. An SSID (Service Set Identifier) is the name of a WiFi network. They are used in beacon and probe attacks.
 
-Deauther SSID Page
 
 ## Attack Page
-![image](./pictures/image.png) 
+![attack](.Pictures/Attack.png) 
 Deauther Attack Page
 
 On the attack page, you start and stop WiFi attacks such as Deauthentication, Beacon, Probe, and Evil Twin.
@@ -116,12 +115,12 @@ You may lose connection to the web interface when initiating an attack, but if y
 The pkts/s info is not automatically refreshed to save resources. You have to manually click RELOAD.
 
 ## FileManager (FS) page
-![image](./pictures/image.png) 
+![fs](./Pictures/fs.png) 
 on The FS page You can uplode your constom Evil Twin page. 
 and you can also uplode multiple HTML Files for Evil Twin but, at a time you can only use HTML file for Evil Twin.
 
 ## Settings Page
-![image](./pictures/image.png) 
+![settings](./Pictures/settings.png) 
 
 You can edit device settings here, such as the SSID and password of Deauther's network. But make sure to hit SAVE after changing something and click on RELOAD to refresh the site and check whether or not your changes were applied.
 
@@ -147,7 +146,9 @@ To use Evil Twin attack
 - Now on "Evil Twin /example.html" Enter your file name like this /File_Name.html.
 - And Now click "Save" Button.
 You are done now u can use EvilTwin attack.
-![EvilTwin1](EvilTwin.gif)
+![EvilTwin1](Pictures/EvilTwin.png)
+#### Example of EvilTwin Attack
+![EvilTwin](Pictures/EvilTwinPotal.png)
 
 # DISCLAIMER
 This project is a proof of concept for testing and educational purposes.
