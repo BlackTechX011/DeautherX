@@ -28,15 +28,11 @@ We don't take any responsibility for what you do with this program.
 - Select your Deauther .bin file
 - Click Program
 
-This Deauther is based on SpacehuhnTech esp8266_deauther so the installation is same for both project. for more information visit https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Installation#flashing-the-firmware-bin-file
-#### drivers for your device:
-
-- CH340/CH341 Drivers: http://www.wch-ic.com/downloads/CH341SER_ZIP.html
-- CP210x Drivers: https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers
-- FTDI Drivers: https://ftdichip.com/drivers/
+For more information visit https://github.com/BlackTechX011/DeautherX.INFO
 
 
 # Display & Button Setup
+For more information visit https://github.com/BlackTechX011/DeautherX.INFO
 ## Before you continue
 Using the display interface is entirely optional. You can also control the Deauther via serial or the web interface.
 
@@ -71,6 +67,7 @@ I focused on the NodeMCU in this tutorial since it is one of the most popular de
 ```
 
 # Web Interface
+For more information visit https://github.com/BlackTechX011/DeautherX.INFO                                  
 To access the web interface, your Deauther must be running, and you have to be connected to its WiFi network ```DeautherX``` using the password ```BlackTechX```
 
 Then open your browser and visit ```192.168.4.1```. Make sure you're not connected to a *VPN* or anything else that could get in the way. You have to temporarily disable the mobile connection on some phones to make it work.
