@@ -13,6 +13,13 @@ Here are some quick links:
 
 ## Password
 The password for `DeautherX` is `BlackTechX`
+# Installation
+- visit [blacktechx011.github.io/DeautherX_Web_Tools/](https://blacktechx011.github.io/DeautherX_Web_Tools/)
+- Select your esp8266 boad
+- Select display type
+- Connect your ESP8266 board via USB
+- Click Connect and Select the serial port of your ESP
+- on Device Dashboard Click on install
 
 # About this Project
 This firmware allows you to easily perform a variety of actions to test 802.11 networks using an ESP8266. It's also a great project for learning about WiFi, microcontrollers, Arduino, hacking and electronics/programming in general.
