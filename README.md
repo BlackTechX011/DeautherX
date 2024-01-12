@@ -13,6 +13,19 @@ Here are some quick links:
 
 ## Password
 The password for `DeautherX` is `BlackTechX`
+## Installation Arduino IDE
+
+* Install on [Arduino IDE](https://www.arduino.cc/en/Main/Software)  
+
+* Go to **File** -> **Preferences** -> **Additional Boards Manager URLs** and add:  
+   `https://raw.githubusercontent.com/BlackTechX011/arduino/main/package_BlackTechX_index.json`  
+   
+* Now go to `Tools` -> `Board` -> `Boards Manager` and install `DeautherX ESP8266`
+* then open DeautherX code folder
+* open deautherx code
+* sclect port
+* Now go to `Tools` -> `Board` -> `Boards Manager` and select your deautherx boad form `DeautherX ESP8266 boads`
+* click on uplode 
 # Installation
 - visit [blacktechx011.github.io/DeautherX_Web_Tools/](https://blacktechx011.github.io/DeautherX_Web_Tools/)
 - Select your esp8266 boad
