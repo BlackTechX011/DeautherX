@@ -23,10 +23,10 @@ The password for `DeautherX` is `BlackTechX`
 * Now go to `Tools` -> `Board` -> `Boards Manager` and install `DeautherX ESP8266`
 * then open DeautherX code folder
 * open deautherx code
-* sclect port
+* select port
 * Now go to `Tools` -> `Board` -> `Boards Manager` and select your deautherx boad form `DeautherX ESP8266 boads`
 * click on uplode 
-# Installation
+# Automatic Installation
 - visit [blacktechx011.github.io/DeautherX_Web_Tools/](https://blacktechx011.github.io/DeautherX_Web_Tools/)
 - Select your esp8266 boad
 - Select display type
