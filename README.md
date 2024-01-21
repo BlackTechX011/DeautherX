@@ -27,7 +27,7 @@ The password for `DeautherX` is `BlackTechX`
    
 * Now go to `Tools` -> `Board` -> `Boards Manager` and install `DeautherX ESP8266`
 * then open DeautherX code folder
-* open deautherx code
+* open DeautherX.ino with Arduino IDE
 * select port
 * Now go to `Tools` -> `Board` -> `Boards Manager` and select your deautherx boad form `DeautherX ESP8266 boads`
 * click on uplode 
