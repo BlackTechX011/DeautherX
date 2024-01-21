@@ -1,4 +1,4 @@
 # arduino-cli.yaml
 board_manager:
   additional_urls:
-    - https://raw.githubusercontent.com/SpacehuhnTech/arduino/main/package_spacehuhn_index.json
+    - https://raw.githubusercontent.com/BlackTechX011/arduino/main/package_BlackTechX_index.json
