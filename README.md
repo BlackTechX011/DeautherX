@@ -1,8 +1,12 @@
 # DeautherX
-![](./img/logo.png)
+   ![](./img/DeautherX.png)
+
+
+
+
 An open source ESP8266_Deauther with modifiable Evil Twin attack.               
 DeautherX is based on spacehuhn deauther. click [here](deauther.com) to know more about spacehuhn deauther
-# New Documentation
+# Documentation
 Please visit [DeautherX wiki](https://github.com/BlackTechX011/DeautherX/wiki/) for information about this project.
 Here are some quick links:
 - [Home](https://github.com/BlackTechX011/DeautherX/wiki)
