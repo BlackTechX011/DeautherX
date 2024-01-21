@@ -1,7 +1,7 @@
 # DeautherX
-   ![](./img/DeautherX.png)
-
-
+<p align="center">
+<img src="https://raw.githubusercontent.com/BlackTechX011/DeautherX/DeautherX_V1.1/img/DeautherX.png" alt="DeautherX" width="390" height="500">
+</p>
 
 
 An open source ESP8266_Deauther with modifiable Evil Twin attack.               
