@@ -1,6 +1,6 @@
 # DeautherX
 <p align="center">
-<img src="https://raw.githubusercontent.com/BlackTechX011/DeautherX/DeautherX_V1.1/img/DeautherX.png" alt="DeautherX" width="390" height="500">
+<img src="https://raw.githubusercontent.com/BlackTechX011/DeautherX/DeautherX_V1.1/img/DeautherX.png" alt="DeautherX" width="370" height="500">
 </p>
 
 
