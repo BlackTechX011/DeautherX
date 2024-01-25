@@ -4,7 +4,7 @@
 </p>
 
 
-An open source ESP8266_Deauther with modifiable Evil Twin attack.               
+An open source ESP8266_Deauther with modifiable Evil Twin attack, wifi strength cheaker and more.               
 DeautherX is made and Devloped by [BlackTechX011](https://github.com/BlackTechX011/) and [DX4GREY](https://github.com/DX4GREY)
 
 
