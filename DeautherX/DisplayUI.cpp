@@ -1,5 +1,6 @@
 /* This software is licensed under the MIT License: https://github.com/BlackTechX011/DeautherX */
 
+/* This software is licensed under the MIT License: https://github.com/spacehuhntech/esp8266_deauther */
 
 #include "DisplayUI.h"
 
@@ -46,7 +47,7 @@ void DisplayUI::shutDown(){
     updatePrefix();
     display.setFont(DejaVu_Sans_Mono_12);
     display.setTextAlignment(OLEDDISPLAY_TEXT_ALIGNMENT::TEXT_ALIGN_LEFT);
-    display.drawXbm(0,0,128,40,logo);
+    display.drawXbm(0,0,80,40,logo);
     drawString(3,center("Shuting down..", maxLen));
     updateSuffix();
     delay(2000);
@@ -922,7 +923,7 @@ void DisplayUI::drawAbout(){
     cver.replace("_", ".");
     drawString(0, center(str("DeautherX" DEAUTHER_VERSION), maxLen));
     drawString(1, leftRight("By:", "BlackTechX", maxLen));
-    drawString(2, leftRight("GitHub: BlackTechX011", maxLen));
+    drawString(2, leftRight("GitHub:", "BlackTechX011", maxLen));
     drawString(3, leftRight("Cpu Freq :", (String)ESP.getCpuFreqMHz() + "Mhz", maxLen));
     drawString(4, leftRight("Core V :", cver, maxLen));
 }
@@ -953,7 +954,7 @@ void DisplayUI::drawCharging()
 {
     display.setFont(DejaVu_Sans_Mono_12);
     display.setTextAlignment(OLEDDISPLAY_TEXT_ALIGNMENT::TEXT_ALIGN_LEFT);
-    display.drawXbm(0,0,128,40,logo);
+    display.drawXbm(0,0,80,40,logo);
     drawString(3,center("Charging", maxLen));
 }
 void DisplayUI::drawRssiMonitor(){
@@ -1089,7 +1090,8 @@ void DisplayUI::drawIntro()
     // drawString(2, center(str(D_INTRO_2), maxLen));
 
     // drawString(1, leftRight("  WiFi", "Tool  ", maxLen));
-    display.drawXbm(0,0,128,40,logo);
+    display.drawXbm(0,0,80,40,logo);
+    // DIM,0x00,0x00,0x80,0x40,
     // display.drawRect(0, 0, screenWidth, sreenHeight - (12 * 2));
     
     if (scan.isScanning())
