@@ -1,5 +1,6 @@
 /* This software is licensed under the MIT License: https://github.com/BlackTechX011/DeautherX */
 
+
 #include "DisplayUI.h"
 
 #include "EvilTwin.h"
@@ -919,13 +920,12 @@ void DisplayUI::draw(bool force)
 void DisplayUI::drawAbout(){
     String cver = ESP.getCoreVersion();
     cver.replace("_", ".");
-    drawString(0, center(str("DeautherX " DEAUTHER_VERSION), maxLen));
-    drawString(1, leftRight("By: @BackTechX_","", maxLen));
-    drawString(2, leftRight("Github","", maxLen));
-    drawString(3, leftRight("http://github.com","", maxLen));
-    drawString(4, leftRight("BlacktechX011","", maxLen));
+    drawString(0, center(str("DeautherX" DEAUTHER_VERSION), maxLen));
+    drawString(1, leftRight("By:", "BlackTechX", maxLen));
+    drawString(2, leftRight("GitHub: BlackTechX011", maxLen));
+    drawString(3, leftRight("Cpu Freq :", (String)ESP.getCpuFreqMHz() + "Mhz", maxLen));
+    drawString(4, leftRight("Core V :", cver, maxLen));
 }
-
 void DisplayUI::drawWifiStatus(){
     drawString(0, center(str(D_WSTATUS), maxLen));
     drawString(1, leftRight("Con    :", WiFi.SSID(), maxLen));
@@ -1070,15 +1070,15 @@ void DisplayUI::drawPacketMonitor()
             y = (sreenHeight - 1) - (scan.getPackets(i) * scale);
             i++;
 
-            Serial.printf("%d,%d -> %d,%d\n", x, (sreenHeight-1), x, y);
+            // Serial.printf("%d,%d -> %d,%d\n", x, (sreenHeight-1), x, y);
             drawLine(x, (sreenHeight - 1), x, y);
             x++;
 
-            Serial.printf("%d,%d -> %d,%d\n", x, (sreenHeight-1), x, y);
+            // Serial.printf("%d,%d -> %d,%d\n", x, (sreenHeight-1), x, y);
             drawLine(x, (sreenHeight - 1), x, y);
             x++;
         }
-        Serial.println("---------");
+        // Serial.println("---------");
     }
 }
 
@@ -1087,9 +1087,14 @@ void DisplayUI::drawIntro()
     // drawString(0, center(str(D_INTRO_0), maxLen));
     // drawString(1, center(str(D_INTRO_1), maxLen));
     // drawString(2, center(str(D_INTRO_2), maxLen));
-    display.drawXbm(0,0,128,64,logo);
+
+    // drawString(1, leftRight("  WiFi", "Tool  ", maxLen));
+    display.drawXbm(0,0,128,40,logo);
     // display.drawRect(0, 0, screenWidth, sreenHeight - (12 * 2));
-  
+    
+    if (scan.isScanning())
+    {
+    }
 }
 void DisplayUI::drawClock()
 {
@@ -1100,7 +1105,7 @@ void DisplayUI::drawClock()
         clockTime += '0';
     clockTime += String(clockMinute);
 
-    display.drawString(74, 30, clockTime);
+    display.drawString(64, 20, clockTime);
 }
 
 void DisplayUI::drawResetting()
