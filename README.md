@@ -18,7 +18,16 @@ Please visit [DeautherX wiki](https://github.com/BlackTechX011/DeautherX/wiki/) 
 ### Password
 The password for `DeautherX` is `BlackTechX`
 
-### Installation Arduino IDE
+# Automatic Installation
+### [Video Tutorial](https://www.youtube.com/watch?v=qQUHb2XycNw)
+- Visit [blacktechx011.github.io/DeautherX_Web_Tools/](https://blacktechx011.github.io/DeautherX_Web_Tools/)
+- Select your ESP8266 board
+- Select display type
+- Connect your ESP8266 board via USB
+- Click Connect and Select the serial port of your ESP
+- On Device Dashboard, Click on install
+
+# Installation Arduino IDE
 - Install on [Arduino IDE](https://www.arduino.cc/en/Main/Software)  
 - Go to **File** -> **Preferences** -> **Additional Boards Manager URLs** and add:  
   `https://raw.githubusercontent.com/BlackTechX011/arduino/main/package_BlackTechX_index.json`  
@@ -29,13 +38,7 @@ The password for `DeautherX` is `BlackTechX`
 - Go to `Tools` -> `Board` -> `Boards Manager` and select your DeautherX board from `DeautherX ESP8266 boards`
 - Click on upload
 
-# Automatic Installation
-- Visit [blacktechx011.github.io/DeautherX_Web_Tools/](https://blacktechx011.github.io/DeautherX_Web_Tools/)
-- Select your ESP8266 board
-- Select display type
-- Connect your ESP8266 board via USB
-- Click Connect and Select the serial port of your ESP
-- On Device Dashboard, Click on install
+
 
 # About this Project
 This firmware allows you to easily perform a variety of actions to test 802.11 networks using an ESP8266. It's also a great project for learning about WiFi, microcontrollers, Arduino, hacking, and electronics/programming in general.
