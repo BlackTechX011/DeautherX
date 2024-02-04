@@ -69,7 +69,7 @@
   #define I2C_ADDR 0x3C
   #define I2C_SDA 5 // D1
   #define I2C_SCL 4 // D2
-  #define USE_DISPLAY true
+  #define USE_DISPLAY false
   #define FLIP_DIPLAY true
 
  #define DISPLAY_TEXT "GitHub BlackTechX011"
@@ -606,7 +606,7 @@
 
 // ======== CONSTANTS ========== //
 // Do not change these values unless you know what you're doing!
-#define DEAUTHER_VERSION "1.5"
+#define DEAUTHER_VERSION "1.6"
 #define DEAUTHER_VERSION_MAJOR 1
 #define DEAUTHER_VERSION_MINOR 0
 #define DEAUTHER_VERSION_REVISION 0
