@@ -99,7 +99,7 @@ void DisplayUI::drawProgressbar(int row, int progress, int max, long len) {
     tmpStr += String("]");
 
     drawString(row, tmpStr);
-    Serial.print(tmpStr);
+
 }
 
 
@@ -921,8 +921,8 @@ void DisplayUI::drawAbout(){
     String cver = ESP.getCoreVersion();
     cver.replace("_", ".");
     drawString(0, center(str("DeautherX " DEAUTHER_VERSION), maxLen));
-    drawString(1, leftRight("By:","BlackTechX", maxLen));
-    drawString(2, leftRight("","BlackTechX011", maxLen));
+    drawString(1, center("By BlackTechX", maxLen));
+    drawString(2, center("BlackTechX011", maxLen));
     drawString(3, leftRight("Cpu Freq :", (String)ESP.getCpuFreqMHz() + "Mhz", maxLen));
     drawString(4, leftRight("Core V :", cver, maxLen));
 }
