@@ -2,8 +2,9 @@
 <p align="center">
 <img src="https://raw.githubusercontent.com/BlackTechX011/DeautherX/DeautherX_V1/img/DeautherX.png" alt="DeautherX" width="370" height="500">
 </p>
+
 An open-source ESP8266_Deauther with modifiable Evil Twin attack, wifi strength checker, and more.               
-DeautherX is made and developed by [BlackTechX011](https://github.com/BlackTechX011/) and [DX4GREY](https://github.com/DX4GREY)
+DeautherX is made and developed by [BlackTechX011](https://github.com/BlackTechX011/) and [DX4GREY](https://github.com/DX4GREY.)
 
 ## Documentation
 Please visit [DeautherX wiki](https://github.com/BlackTechX011/DeautherX/wiki/) for information about this project. Here are some quick links:
