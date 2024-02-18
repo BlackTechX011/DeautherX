@@ -88,6 +88,35 @@
   #define LED_NUM 1
   #define LED_NEOPIXEL_PIN 9
   #define LED_MODE_BRIGHTNESS 10
+#elif defined(HACKHELD_VEGA)
+// ===== LED ===== //
+  #define USE_LED true
+  #define LED_NEOPIXEL
+
+  #define LED_NEOPIXEL_GRB
+// #define LED_NEOPIXEL_RGB
+
+  #define LED_MODE_BRIGHTNESS 10
+
+  #define LED_NUM 1
+  #define LED_NEOPIXEL_PIN 15 // D8
+
+// ===== DISPLAY ===== //
+  #define USE_DISPLAY true
+  #define FLIP_DIPLAY true
+
+  #define SH1106_I2C
+
+  #define I2C_ADDR 0x3C
+  #define I2C_SDA 4      // D2
+  #define I2C_SCL 5      // D1
+
+// ===== BUTTONS ===== //
+  #define BUTTON_UP 14   // D5
+  #define BUTTON_DOWN 12 // D6
+  #define BUTTON_A 2     // D4
+  #define BUTTON_B 0     // D3
+
 
 // https://github.com/BlackTechX011/DeautherX-Buttons#example-setup-with-spi-oled
 #elif defined(DISPLAY_EXAMPLE_SPI)
@@ -606,7 +635,7 @@
 
 // ======== CONSTANTS ========== //
 // Do not change these values unless you know what you're doing!
-#define DEAUTHER_VERSION "1.6"
+#define DEAUTHER_VERSION "1.7"
 #define DEAUTHER_VERSION_MAJOR 1
 #define DEAUTHER_VERSION_MINOR 0
 #define DEAUTHER_VERSION_REVISION 0
