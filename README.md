@@ -3,8 +3,7 @@
 <img src="https://raw.githubusercontent.com/BlackTechX011/DeautherX/DeautherX_V1/img/DeautherX.png" alt="DeautherX" width="370" height="500">
 </p>
 
-An open-source ESP8266_Deauther with modifiable Evil Twin attack, wifi strength checker, and more.               
-DeautherX is made and developed by [BlackTechX011](https://github.com/BlackTechX011/) and [DX4GREY](https://github.com/DX4GREY.)
+An open-source ESP8266_Deauther with customizable Evil Twin attack, and WiFi signal strength checker, with a user-friendly web interface and Display interface and more.              
 
 ## Documentation
 Please visit [DeautherX wiki](https://github.com/BlackTechX011/DeautherX/wiki/) for information about this project. Here are some quick links:
@@ -17,7 +16,7 @@ Please visit [DeautherX wiki](https://github.com/BlackTechX011/DeautherX/wiki/) 
 
 ### Password
 The password for `DeautherX` is `BlackTechX`
-
+___
 # Automatic Installation
 ### [Video Tutorial](https://www.youtube.com/watch?v=qQUHb2XycNw)
 - Visit [blacktechx011.github.io/DeautherX_Web_Tools/](https://blacktechx011.github.io/DeautherX_Web_Tools/)
@@ -38,8 +37,8 @@ The password for `DeautherX` is `BlackTechX`
 - Go to `Tools` -> `Board` -> `Boards Manager` and select your DeautherX board from `DeautherX ESP8266 boards`
 - Click on upload
 
-
-
+___
+___
 # About this Project
 This firmware allows you to easily perform a variety of actions to test 802.11 networks using an ESP8266. It's also a great project for learning about WiFi, microcontrollers, Arduino, hacking, and electronics/programming in general.
 
@@ -57,9 +56,21 @@ Please check the legal regulations in your country before using it.
 We don't take any responsibility for what you do with this program.
 
 ### [blog-blacktechx.hashnode.dev/deautherx](https://blog-blacktechx.hashnode.dev/deautherx)
+___
+___
+## Special Thanks to DX4GREY
+
+- GitHub Profile: [DX4GREY](https://github.com/DX4GREY/)
+## Contact Us
+* `If you have any feedback or queries`
+* `Telegram: @BlackTechX`
+## Telegram Channel
+
+* `All updates will be posted here !` 
+- [![Telegram](https://img.shields.io/badge/Chat-Telegram-blue?style=for-the-badge&logo=telegram)](https://t.me/BlackTechXTeam)
 
 
-
+___
 
 
 
