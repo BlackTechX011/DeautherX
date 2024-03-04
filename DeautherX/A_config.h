@@ -625,7 +625,7 @@
 
 // ===== Web ===== //
 #ifndef WEB_IP_ADDR
-  #define WEB_IP_ADDR (172, 217, 28, 254)
+  #define WEB_IP_ADDR (192, 168, 4, 1)
 #endif // ifndef WEB_IP_ADDR
 
 #ifndef WEB_URL
