@@ -8,15 +8,16 @@ An open-source ESP8266_Deauther with customizable Evil Twin attack, and WiFi sig
 ## Documentation
 Please visit [DeautherX wiki](https://github.com/BlackTechX011/DeautherX/wiki/) for information about this project. Here are some quick links:
 - [Home](https://github.com/BlackTechX011/DeautherX/wiki)
-- [supported‐devices](https://github.com/BlackTechX011/DeautherX/wiki/supported‐devices)
+- [supported-devices](https://github.com/BlackTechX011/DeautherX/wiki/supported-devices)
 - [Installation](https://github.com/BlackTechX011/DeautherX/wiki/Installation)
 - [Display and Button Setup](https://github.com/BlackTechX011/DeautherX/wiki/Display-and-button-Setup)
-- [serial‐commands](https://github.com/BlackTechX011/DeautherX/wiki/serial‐commands)
+- [serial-commands](https://github.com/BlackTechX011/DeautherX/wiki/serial-commands)
 - [Settings](https://github.com/BlackTechX011/DeautherX/wiki/Settings)
 
 ### Password
 The password for `DeautherX` is `BlackTechX`
 ___
+
 # Automatic Installation
 ### [Video Tutorial](https://www.youtube.com/watch?v=qQUHb2XycNw)
 - Visit [blacktechx011.github.io/DeautherX_Web_Tools/](https://blacktechx011.github.io/DeautherX_Web_Tools/)
@@ -38,7 +39,7 @@ ___
 - Click on upload
 
 ___
-___
+
 # About this Project
 This firmware allows you to easily perform a variety of actions to test 802.11 networks using an ESP8266. It's also a great project for learning about WiFi, microcontrollers, Arduino, hacking, and electronics/programming in general.
 
@@ -56,21 +57,15 @@ Please check the legal regulations in your country before using it.
 We don't take any responsibility for what you do with this program.
 
 ### [blog-blacktechx.hashnode.dev/deautherx](https://blog-blacktechx.hashnode.dev/deautherx)
+
 ___
-___
+
 ## Special Thanks to DX4GREY
-
 - GitHub Profile: [DX4GREY](https://github.com/DX4GREY/)
+
 ## Contact Us
-* `If you have any feedback or queries`
-* `Telegram: @BlackTechX`
+- If you have any feedback or queries, reach us on Telegram: @BlackTechX
+
 ## Telegram Channel
-
-* `All updates will be posted here !` 
-- [![Telegram](https://img.shields.io/badge/Chat-Telegram-blue?style=for-the-badge&logo=telegram)](https://t.me/BlackTechXTeam)
-
-
-___
-
-
-
+- All updates will be posted here!
+[![Telegram](https://img.shields.io/badge/Chat-Telegram-blue?style=for-the-badge&logo=telegram)](https://t.me/BlackTechXTeam)
