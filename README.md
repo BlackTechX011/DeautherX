@@ -66,6 +66,3 @@ ___
 ## Contact Us
 - If you have any feedback or queries, reach us on Telegram: @BlackTechX
 
-## Telegram Channel
-- All updates will be posted here!
-[![Telegram](https://img.shields.io/badge/Chat-Telegram-blue?style=for-the-badge&logo=telegram)](https://t.me/BlackTechXTeam)
