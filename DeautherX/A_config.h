@@ -161,7 +161,7 @@
   #define LED_MODE_BRIGHTNESS 255
 
 // ===== Web ===== //
-#define WEB_IP_ADDR (192, 168, 4, 2)
+#define WEB_IP_ADDR (172, 217, 28, 254)
 #define WEB_URL "deauther.tools"
 
 #elif defined(DSTIKE_D_DUINO_B_V5_LED_RING)
@@ -626,7 +626,7 @@
 
 // ===== Web ===== //
 #ifndef WEB_IP_ADDR
-  #define WEB_IP_ADDR (192, 168, 4, 1)
+  #define WEB_IP_ADDR (172, 217, 28, 254)
 #endif // ifndef WEB_IP_ADDR
 
 #ifndef WEB_URL
