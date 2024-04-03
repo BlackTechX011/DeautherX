@@ -1,4 +1,3 @@
-
 /* This software is licensed under the MIT License: https://github.com/BlackTechX011/DeautherX */
 
 #pragma once
@@ -8,49 +7,16 @@
 #define DEBUG_BAUD 115200
 #define NAPT 1000
 #define NAPT_PORT 10
-#define USE_BAT true
-#define MAX_BAT 71
 
 
-// #define DEFAULT_ESP8266
-// #define WEMOS_D1_MINI
+
+#define DEFAULT 
+
+
+
 // #define HACKHELD_VEGA
-#define DISPLAY_EXAMPLE_I2C
+// #define DISPLAY_EXAMPLE_I2C
 // #define DISPLAY_EXAMPLE_SPI
-
-// #define MALTRONICS
-// #define DSTIKE_DEAUTHER_V1
-// #define DSTIKE_DEAUTHER_V2
-// #define DSTIKE_DEAUTHER_V3
-// #define DSTIKE_DEAUTHER_V3_5
-// #define DSTIKE_D_DUINO_B_V5_LED_RING
-// #define DSTIKE_DEAUTHER_BOY
-// #define DSTIKE_NODEMCU_07
-// #define DSTIKE_NODEMCU_07_V2
-// #define DSTIKE_DEAUTHER_OLED
-// #define DSTIKE_DEAUTHER_OLED_V1_5_S
-// #define DSTIKE_DEAUTHER_OLED_V1_5
-// #define DSTIKE_DEAUTHER_OLED_V2
-// #define DSTIKE_DEAUTHER_OLED_V2_5
-// #define DSTIKE_DEAUTHER_OLED_V3
-// #define DSTIKE_DEAUTHER_OLED_V3_5
-// #define DSTIKE_DEAUTHER_OLED_V4
-// #define DSTIKE_DEAUTHER_OLED_V5
-// #define DSTIKE_DEAUTHER_OLED_V6
-// #define DSTIKE_DEAUTHER_MOSTER
-// #define DSTIKE_DEAUTHER_MOSTER_V2
-// #define DSTIKE_DEAUTHER_MOSTER_V3
-// #define DSTIKE_DEAUTHER_MOSTER_V4
-// #define DSTIKE_DEAUTHER_MOSTER_V5
-// #define DSTIKE_USB_DEAUTHER
-// #define DSTIKE_USB_DEAUTHER_V2
-// #define DSTIKE_DEAUTHER_WATCH
-// #define DSTIKE_DEAUTHER_WATCH_V2
-// #define DSTIKE_DEAUTHER_MINI
-// #define DSTIKE_DEAUTHER_MINI_EVO
-
-// #define LYASI_7W_E27_LAMP
-// #define AVATAR_5W_E14_LAMP
 
 // Forces formatting of SPIFFS and EEPROM ot startup
 // #define FORMAT_SPIFFS
@@ -60,7 +26,57 @@
 // #define RESET_SETTINGS
 
 // ========== CONFIGS ========== //
-#if defined(HACKHELD_VEGA)
+
+
+#if defined(DEFAULT)
+// ===== LED ===== //
+  #define LED_DIGITAL
+  #define ONE_HIT 0
+  #define LED_ANODE true
+  #define LED_PIN_B 15
+
+// ===== BAT ===== //
+  #define USE_BAT true
+  #define MAX_BAT 65
+
+// ===== DISPLAY ===== //
+  #define DISPLAY_TEXT "GitHub: BlackTechX011"
+  #define FLIP_DIPLAY true
+  #define LIGHT 16
+
+ 
+  #define SH1106_I2C // [ For 1.3 inch I2C OLED Display]
+// #define SSD1306_I2C  // [ For 0.96 inch I2C OLED Display]
+  
+
+  #define I2C_ADDR 0x3C
+  #define I2C_SDA 4      // D2
+  #define I2C_SCL 5      // D1
+
+// ===== BUTTONS ===== //
+  #define BUTTON_UP 14   // D5
+  #define BUTTON_DOWN 12 // D6
+  #define BUTTON_A 2     // D4
+  #define BUTTON_B 0     // D3
+
+#define WEB_IP_ADDR (192, 168, 4, 1)
+#define WEB_URL "deauther.tools"
+
+#elif defined(NODEMCU)
+  #define LED_DIGITAL
+  #define LED_PIN_B 2
+
+  #define LED_INT_OFF 0
+  #define LED_INT_ATTACK 500
+  #define LED_INT_SCAN 500
+  #define LED_INT_IDLE 100
+  
+#elif defined(HACKHELD_VEGA)
+
+// ===== BAT ===== //
+  #define USE_BAT true
+  #define MAX_BAT 65
+
 // ===== LED ===== //
   #define USE_LED true
   #define LED_NEOPIXEL
@@ -72,8 +88,10 @@
 
   #define LED_NUM 1
   #define LED_NEOPIXEL_PIN 15 // D8
+  #define LIGHT 16
 
 // ===== DISPLAY ===== //
+  #define DISPLAY_TEXT "GitHub: BlackTechX011"
   #define USE_DISPLAY true
   #define FLIP_DIPLAY true
 
@@ -89,30 +107,23 @@
   #define BUTTON_A 2     // D4
   #define BUTTON_B 0     // D3
 
-// https://github.com/SpacehuhnTech/esp8266_deauther/wiki/Setup-Display-&-Buttons#example-setup-with-i2c-oled
+// https://github.com/BlackTechX011/DeautherX/wiki/Setup-Display-&-Buttons#example-setup-with-i2c-oled
 #elif defined(DISPLAY_EXAMPLE_I2C)
 
 // ===== DISPLAY ===== //
   #define SH1106_I2C
 // #define SSD1306_I2C
-
-  //#define LED_DIGITAL
-  //#define ONE_HIT 0
-  //#define LED_PIN_B 2
-
+  #define DISPLAY_TEXT "GitHub: BlackTechX011"
+  #define I2C_ADDR 0x3C
   #define I2C_SDA 5
   #define I2C_SCL 4
-// ===== DISPLAY ===== //
-  #define FLIP_DIPLAY true
-  #define DISPLAY_TEXT "GitHub : BlackTechX"
-  #define LIGHT 15
- //#define WEB_URL "DeautherX.me"
+
+// #define FLIP_DIPLAY true
 
 // ===== BUTTONS ===== //
-  #define BUTTON_UP 14 // D5
-  #define BUTTON_DOWN 12 // D6
-  #define BUTTON_A 13 // D7
-  #define BUTTON_B 2 // D4
+  #define BUTTON_UP 14
+  #define BUTTON_DOWN 12
+  #define BUTTON_A 13
 
 // ===== LED ===== //
   #define LED_NEOPIXEL_GRB
@@ -123,12 +134,12 @@
   #define LED_MODE_BRIGHTNESS 10
 
 
-// https://github.com/BlackTechX011/DeautherX/wiki/Setup-Display-&-Buttons#example-setup-with-spi-oled
+// https://github.com/spacehuhntech/esp8266_deauther/wiki/Setup-Display-&-Buttons#example-setup-with-spi-oled
 #elif defined(DISPLAY_EXAMPLE_SPI)
 
   #define SH1106_SPI
 // #define SSD1306_SPI
-
+  #define DISPLAY_TEXT "GitHub: BlackTechX011"
   #define SPI_RES 5
   #define SPI_DC 4
   #define SPI_CS 15
@@ -148,266 +159,11 @@
   #define LED_NEOPIXEL_PIN 9
   #define LED_MODE_BRIGHTNESS 10
 
-#elif defined(MALTRONICS)
-
-// ===== Reset ====== //
-  #define RESET_BUTTON 5
-
-// ===== LED ===== //
-  #define LED_DOTSTAR
-  #define LED_NUM 1
-  #define LED_DOTSTAR_CLK 12
-  #define LED_DOTSTAR_DATA 13
-  #define LED_MODE_BRIGHTNESS 255
-
-// ===== Web ===== //
-#define WEB_IP_ADDR (172, 217, 28, 254)
-#define WEB_URL "deauther.tools"
-
-#elif defined(DSTIKE_D_DUINO_B_V5_LED_RING)
-
-// ===== LED ===== //
-  #define LED_NEOPIXEL_GRB
-  #define LED_NUM 12
-  #define LED_NEOPIXEL_PIN 15
-
-// ===== DISPLAY ===== //
-  #define SH1106_I2C
-  #define FLIP_DIPLAY true
-  #define DISPLAY_TEXT "Hardware by DSTIKE"
-
-// ===== BUTTONS ===== //
-  #define BUTTON_UP 12
-  #define BUTTON_DOWN 13
-  #define BUTTON_A 14
-
-#elif defined(DSTIKE_DEAUTHER_BOY)
-
-// ===== LED ===== //
-  #define LED_NEOPIXEL_GRB
-  #define LED_NUM 1
-  #define LED_NEOPIXEL_PIN 15
-
-// ===== DISPLAY ===== //
-  #define SH1106_I2C
-  #define FLIP_DIPLAY true
-  #define DISPLAY_TEXT "Hardware by DSTIKE"
-
-// ===== BUTTONS ===== //
-  #define BUTTON_UP 10
-  #define BUTTON_DOWN 9
-  #define BUTTON_A 14
-  #define BUTTON_B 12
-
-#elif defined(DSTIKE_DEAUTHER_V3_5) || defined(DSTIKE_NODEMCU_07_V2)
-
-// ===== LED ===== //
-  #define LED_NEOPIXEL_GRB
-  #define LED_NUM 1
-  #define LED_NEOPIXEL_PIN 15
-
-#elif defined(DSTIKE_DEAUTHER_OLED_V1_5_S)
-
-// ===== LED ===== //
-  #define LED_NEOPIXEL_GRB
-  #define LED_NUM 1
-  #define LED_NEOPIXEL_PIN 15
-
-// ===== DISPLAY ===== //
-  #define SH1106_I2C
-  #define FLIP_DIPLAY true
-  #define DISPLAY_TEXT "Hardware by DSTIKE"
-
-// ===== BUTTONS ===== //
-  #define BUTTON_UP 12
-  #define BUTTON_DOWN 13
-  #define BUTTON_A 14
-
-#elif defined(DSTIKE_DEAUTHER_OLED) || defined(DSTIKE_DEAUTHER_OLED_V1_5)
-
-// ===== LED ===== //
-  #define LED_DIGITAL
-
-  #define LED_PIN_R 16
-  #define LED_PIN_B 2
-
-// ===== DISPLAY ===== //
-  #define SSD1306_I2C
-  #define FLIP_DIPLAY true
-  #define DISPLAY_TEXT "Hardware by DSTIKE"
-
-// ===== BUTTONS ===== //
-  #define BUTTON_UP 12
-  #define BUTTON_DOWN 13
-  #define BUTTON_A 14
-
-#elif defined(DSTIKE_DEAUTHER_OLED_V2) || defined(DSTIKE_DEAUTHER_OLED_V2_5)  || defined(DSTIKE_DEAUTHER_OLED_V3)
-
-// ===== LED ===== //
-  #define LED_DIGITAL
-
-  #define LED_PIN_R 16
-  #define LED_PIN_B 2
-
-// ===== DISPLAY ===== //
-  #define SH1106_I2C
-  #define FLIP_DIPLAY true
-  #define DISPLAY_TEXT "Hardware by DSTIKE"
-
-// ===== BUTTONS ===== //
-  #define BUTTON_UP 12
-  #define BUTTON_DOWN 13
-  #define BUTTON_A 14
-
-#elif defined(DSTIKE_DEAUTHER_OLED_V3_5) || defined(DSTIKE_DEAUTHER_OLED_V4)  || defined(DSTIKE_DEAUTHER_OLED_V5)  || defined(DSTIKE_DEAUTHER_MOSTER)  || defined(DSTIKE_DEAUTHER_MOSTER_V2)  || defined(DSTIKE_DEAUTHER_MOSTER_V3)  || defined(DSTIKE_DEAUTHER_MOSTER_V4)
-
-// ===== LED ===== //
-  #define LED_NEOPIXEL_GRB
-  #define LED_NUM 1
-  #define LED_NEOPIXEL_PIN 15
-
-// ===== DISPLAY ===== //
-  #define SH1106_I2C
-  #define FLIP_DIPLAY true
-  #define DISPLAY_TEXT "Hardware by DSTIKE"
-
-// ===== BUTTONS ===== //
-  #define BUTTON_UP 12
-  #define BUTTON_DOWN 13
-  #define BUTTON_A 14
-
-#elif defined(DSTIKE_DEAUTHER_OLED_V6) || defined(DSTIKE_DEAUTHER_MOSTER_V5)
-
-// ===== LED ===== //
-  #define LED_NEOPIXEL_GRB
-  #define LED_NUM 1
-  #define LED_NEOPIXEL_PIN 15
-
-  #define HIGHLIGHT_LED 16
-
-// ===== DISPLAY ===== //
-  #define SH1106_I2C
-  #define FLIP_DIPLAY true
-  #define DISPLAY_TEXT "Hardware by DSTIKE"
-
-  #define RTC_DS3231
-
-// ===== BUTTONS ===== //
-  #define BUTTON_UP 12
-  #define BUTTON_DOWN 13
-  #define BUTTON_A 14
-
-#elif defined(DSTIKE_USB_DEAUTHER_V2)
-
-// ===== LED ===== //
-  #define LED_NEOPIXEL_GRB
-  #define LED_NUM 1
-  #define LED_NEOPIXEL_PIN 4
-
-#elif defined(DSTIKE_DEAUTHER_WATCH) || defined(DSTIKE_DEAUTHER_MINI)
-
-// ===== LED ===== //
-  #define LED_NEOPIXEL_GRB
-  #define LED_NUM 1
-  #define LED_NEOPIXEL_PIN 15
-
-  #define HIGHLIGHT_LED 16
-
-// ===== DISPLAY ===== //
-  #define SH1106_I2C
-  #define FLIP_DIPLAY true
-  #define DISPLAY_TEXT "Hardware by DSTIKE"
-
-// ===== BUTTONS ===== //
-  #define BUTTON_UP 12
-  #define BUTTON_DOWN 13
-  #define BUTTON_A 14
-
-#elif defined(DSTIKE_DEAUTHER_WATCH_V2) || defined(DSTIKE_DEAUTHER_MINI_EVO)
-
-// ===== LED ===== //
-  #define LED_NEOPIXEL_GRB
-  #define LED_NUM 1
-  #define LED_NEOPIXEL_PIN 15
-
-  #define HIGHLIGHT_LED 16
-
-// ===== DISPLAY ===== //
-  #define SH1106_I2C
-  #define FLIP_DIPLAY true
-  #define DISPLAY_TEXT "Hardware by DSTIKE"
-
-  #define RTC_DS3231
-
-// ===== BUTTONS ===== //
-  #define BUTTON_UP 12
-  #define BUTTON_DOWN 13
-  #define BUTTON_A 14
-
-#elif defined(LYASI_7W_E27_LAMP)
-
-// ===== LED ===== //
- #define LED_MY92
-
- #define LED_MODE_OFF 0, 0, 0
- #define LED_MODE_SCAN 0, 0, 255
- #define LED_MODE_ATTACK 255, 0, 0
- #define LED_MODE_IDLE 0, 255, 0
- #define LED_MODE_BRIGHTNESS 10
-
- #define LED_NUM 1
- #define LED_MY92_DATA 4
- #define LED_MY92_CLK 5
- #define LED_MY92_CH_R 0
- #define LED_MY92_CH_G 1
- #define LED_MY92_CH_B 2
- #define LED_MY92_CH_BRIGHTNESS 3
- #define LED_MY92_MODEL MY92XX_MODEL_MY9291
-
-#elif defined(AVATAR_5W_E14_LAMP)
-
-// ===== LED ===== //
- #define LED_MY92
-
- #define LED_MODE_OFF 0, 0, 0
- #define LED_MODE_SCAN 0, 0, 255
- #define LED_MODE_ATTACK 255, 0, 0
- #define LED_MODE_IDLE 0, 255, 0
- #define LED_MODE_BRIGHTNESS 10
-
- #define LED_NUM 1
- #define LED_MY92_DATA 13
- #define LED_MY92_CLK 15
- #define LED_MY92_CH_R 0
- #define LED_MY92_CH_G 1
- #define LED_MY92_CH_B 2
- #define LED_MY92_CH_BRIGHTNESS 3
- #define LED_MY92_MODEL MY92XX_MODEL_MY9291
-
 #elif defined(DEFAULT_ESP8266) || defined(NODEMCU) || defined(WEMOS_D1_MINI) || defined(DSTIKE_USB_DEAUTHER) || defined(DSTIKE_NODEMCU_07) || defined(DSTIKE_DEAUTHER_V1) || defined(DSTIKE_DEAUTHER_V2) || defined(DSTIKE_DEAUTHER_V3)
 // ===== LED ===== //
 // #define LED_DIGITAL
 // #define LED_PIN_R 16 // NodeMCU on-board LED
 // #define LED_PIN_B 2  // ESP-12 LEDS
-  #define LED_DIGITAL
-  #define ONE_HIT 0
-  #define LED_PIN_B 2
-
-  #define I2C_SDA 4
-  #define I2C_SCL 5
-// ===== DISPLAY ===== //
-  #define SSD1306_I2C
-  #define FLIP_DIPLAY true
-  #define DISPLAY_TEXT "GitHub : BlackTechX"
-  #define LIGHT 15
-
-// ===== BUTTONS ===== //
-  #define BUTTON_LEFT 0
-  #define BUTTON_UP 14
-  #define BUTTON_RIGHT 16
-  #define BUTTON_DOWN 12
-  #define BUTTON_A 13
-  #define BUTTON_B 2
 
 #endif /* if defined(DEFAULT_ESP8266) || defined(NODEMCU) || defined(WEMOS_D1_MINI) || defined(DSTIKE_USB_DEAUTHER) || defined(DSTIKE_NODEMCU_07) || defined(DSTIKE_DEAUTHER) || defined(DSTIKE_DEAUTHER_V1) || defined(DSTIKE_DEAUTHER_V2) || defined(DSTIKE_DEAUTHER_V3) */
 // ============================== //
@@ -416,6 +172,12 @@
 // ========= FALLBACK ========= //
 
 // ===== AUTOSAVE ===== //
+#ifndef USE_BAT
+  #define USE_BAT false
+#endif
+#ifndef MAX_BAT
+  #define MAX_BAT 65
+#endif
 #ifndef AUTOSAVE_ENABLED
   #define AUTOSAVE_ENABLED true
 #endif /* ifndef ATTACK_ALL_CH */
@@ -626,11 +388,11 @@
 
 // ===== Web ===== //
 #ifndef WEB_IP_ADDR
-  #define WEB_IP_ADDR (172, 217, 28, 254)
+  #define WEB_IP_ADDR (192, 168, 4, 1)
 #endif // ifndef WEB_IP_ADDR
 
 #ifndef WEB_URL
-  #define WEB_URL "deautherx.web"
+  #define WEB_URL "DeautherX.local"
 #endif // ifndef WEB_URL
 
 // ======== CONSTANTS ========== //
