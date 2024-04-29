@@ -63,6 +63,6 @@ ___
 ## Special Thanks to DX4GREY
 - GitHub Profile: [DX4GREY](https://github.com/DX4GREY/)
 
-## Contact Us
-- If you have any feedback or queries, reach us on Telegram: @BlackTechX
+## :)
+- If you have any feedback or queries, create a issue on this repo
 
