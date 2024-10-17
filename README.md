@@ -50,13 +50,13 @@ To know more about deauthentication, visit [WiFi Deauthentication Frame Explaine
 <!-- Documentation -->
 ## :books: Documentation
 
-Please visit the [DeautherX docs](https://blacktechx011.github.io/DeautherX_Docs/) for detailed information about this project. Here are some quick links:
+Please visit the [DeautherX docs](https://blacktechx011.github.io/DeautherX_Docs/) for detailed information about this project. Here is quick link:
 - [Home](https://blacktechx011.github.io/DeautherX_Docs/)
-- [Supported Devices](https://blacktechx011.github.io/DeautherX_Docs/supported-devices)
-- [Installation](https://blacktechx011.github.io/DeautherX_Docs/Installation)
-- [Display and Button Setup](https://blacktechx011.github.io/DeautherX_Docs/Display-and-button-Setup)
-- [Serial Commands](https://blacktechx011.github.io/DeautherX_Docs/serial-commands)
-- [Settings](https://blacktechx011.github.io/DeautherX_Docs/Settings)
+```
+https://blacktechx011.github.io/DeautherX_Docs/
+```
+
+
 
 <!-- Password -->
 ## :lock: Password
